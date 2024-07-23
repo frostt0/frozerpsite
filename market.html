@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Froze Roleplay - Resmi Web Sitesi">
+    <meta name="description" content="Froze Roleplay - Resmi Web Sitesi">
+    <title>Froze Roleplay</title>
+
+    <!--font-awesome icons link-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/main7b307b30.css?v=4" rel="stylesheet">
+    <link rel="icon" href="favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <!--main style file-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body id="darkmode">
+    <div class="loader_screen preloader" id="preloader">
+        <div class="loader loader-box">
+            <svg viewbox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navber">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Logo.png" width="150" />
+            </a>
+            <div class="menu-main" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto menu-item">
+                    <li class="nav-item">
+                        <a class="nav-link menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="custom-menubar">
+            <ul class="nav-link-block">
+                <li>
+                    <a class="menu-link" target="_blank" href="index.html" >Ana sayfa</a>
+                </li>
+            <li>
+                    <a href="index.html#about" class="menu-link">Hakkımızda</a>
+                </li>
+                <li>
+                    <a class="menu-link" target="_blank" href="https://discord.gg/BQwzCD6P84" >Discord</a>
+                </li>
+            <li>
+                    <a href="index.html#blog" class="menu-link">Tanıtım</a>
+                </li> 
+            <li>
+                    <a class="menu-link" target="_blank" href="market.html" >İnterior Listesi</a>
+                </li> 
+                <li>
+                    <a class="menu-link" target="_blank" href="market.html" >Market</a>
+                </li>
+                <li>
+                    <a class="menu-link" target="_blank" href="oyunindir.html" >Oyun İndirme</a>
+                </li>
+            </ul>
+            <ul class="responsive-nav">
+            </ul>
+            <div class="menu-close">
+                <a class="hide-menu-btn"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </nav>
+	<style>
+							        
+							        .olalanoc {
+							            font-size: 50px;
+							        }
+							        
+							
+                                    .form__group {
+                                      position: relative;
+                                      padding: 15px 0 0;
+                                      margin-top: 10px;
+                                      width: 50%;
+                                    }
+                                    
+                                    .form__field {
+                                      font-family: inherit;
+                                      width: 100%;
+                                      border: 0;
+                                      border-bottom: 2px solid #9b9b9b;
+                                      outline: 0;
+                                      font-size: 1.3rem;
+                                      color: #fff;
+                                      padding: 7px 0;
+                                      background: transparent;
+                                      transition: border-color 0.2s;
+                                    
+
+                                    
+                                      &:placeholder-shown ~ .form__label {
+                                        font-size: 1.3rem;
+                                        cursor: text;
+                                      }
+                                    }
+                                    
+                                    .form__label {
+                                      position: absolute;
+
+                                      display: block;
+                                      transition: 0.2s;
+                                      font-size: 1rem;
+                                      color: #9b9b9b;
+                                    }
+                                    .title_news {
+                                         color: #FFFFFF;
+                                    }
+                                    
+                                    .form__field:focus {
+                                        display: block;
+                                        transition: 0.2s;
+                                        font-size: 1rem;
+                                        color: #26b500;
+                                        font-weight:700;    
+                                    
+                                      padding-bottom: 6px;  
+                                      font-weight: 700;
+                                      border-width: 3px;
+                                      border-image: linear-gradient(to right, #26b500,#26b500);
+                                      border-image-slice: 1;
+                                    }
+                                 body {
+                                      font-family: 'Poppins', sans-serif; 
+
+                                      flex-direction: column;
+                                      justify-content: center;
+                                      align-items: center;
+                                      min-height: 100vh;
+                                      font-size: 1.5rem;
+                                      background-color:#222222;
+                                    }
+                                    /* reset input */
+                                    .form__field{
+                                      &:required,&:invalid { box-shadow:none; }
+                                    }
+                                    /* demo */
+
+								    
+								</style>
+								<script>
+							  updateCount = () => {
+								     
+                                let price = document.getElementById("bakiyeyuke");
+                                let loadSpan = document.getElementById("bakiye");
+                                let loadSpan2 = document.getElementById("bakiyeode");
+                                if (!price) return;
+                                
+                                var comission =
+                                  (Number(price.value) / 100) * 
+                                  9.5 + 0.50;
+                                  if (price.value < 1) comission = 0;
+                                //var kdv = Number(price.value) / 100 * 18;
+                                this.totalPayment = Number(price.value) + comission; // + kdv;
+                                this.totalPayment2 = Number(price.value) + Number(price.value) * 30 / 100;
+                            
+                            
+                               loadSpan.innerHTML = `Toplam Ödenecek Tutar: ${this.totalPayment} TL`;
+                               loadSpan2.innerHTML = `Hesabınıza Geçecek Tutar: ${Math.floor(this.totalPayment2)} TL`; 
+                               // loadSpan2.innerHTML = `Hesabınıza Geçecek Tutar: ${Math.floor(price.value)} TL`;
+                            
+                                //document.getElementById('check-control').style.display = price.value > 500 ? 'flex' : 'none';
+                              };
+                              setInterval(this.updateCount, 50);
+                            							
+                                </script>	
+
+    <section id="banner">
+     <div class=".particles-js-canvas-el" id="particles-js"></div>  
+        <div class="backtotop">
+            <a href="#banner"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        </div>
+        <div class="follow-us">
+            <span>Takip Edin</span>
+            <a href="https://www.youtube.com/channel/UCJjj0vYRvOfDd9j2VNwlASw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </div>
+        <div class="banner-arrow">
+            <i class="fa fa-angle-left arrow-al" aria-hidden="true"></i>
+            <i class="fa fa-angle-right arrow-ar" aria-hidden="true"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+             <div class="col-lg-6 col-sm-8 col-md-6 landscape-m-auto tab-m-auto">  
+                    <img src="bigsmoke.png" alt="banner-img" class="img-fluid">
+             </div>  
+                <div class="col-lg-5 m-auto banner-txt">
+                    <div class="banner-main">
+                        <div class="banner-item">
+                           <form action="" method="post">
+                                        	<div class="md_bls">
+    								
+    								<div class="title_news">Bakiye yüklemek için alt kısmı doldurunuz</div>
+    								
+									
+									<ul class="news_block">
+           								<li><input type="text" class="form__field" maxlength="25" placeholder="Kullanıcı Adı" required="required" name="username2" id='username'/></li>
+										<li><input type="number" class="form__field" placeholder="Yüklenecek Bakiye" oninput="if(value.length>5)value=value.slice(0,5)" required="required" name="bakiyeyuke2" id='bakiyeyuke' /></li>									<li><input type="email" class="form__field" placeholder="Email Adresi"  maxlength="55" required="required" name="mail" id='mail' /></li>
+										<li><input type="number" class="form__field" placeholder="Telefon Numarası"  maxlength="11" oninput="if(value.length>11)value=value.slice(0,11)" required="required" name="numara" id='numara' /></li>
+										<li><span  class="form__field" name="bakiye" id='bakiye' />Toplam Ödenecek Tutar:</li>
+																				<li><span  class="form__field" name="bakiyeode" id='bakiyeode' />Hesabınıza Geçecek Tutar:</li> 
+									</ul>
+    								<div class="home__button">
+    									<input class="primary_btn gradient_btn__orange start_play" type="submit" name = "aynen" value = "Bakiye Yükle!"></input>
+    									
+    								</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 footer-logo">
+                    <a href="index.html"><img src="Logo.png" width="120" /></a>
+                    <p>Bu heyecan dolu serüvene katılmak için sunucumuza giriş yapabilirsin. Unutma içeride seni zorluklar ve eğlenceli anlar bekliyor.<br><br>
+                       Yeni arkadaşlar yeni bir hayat!<br><br>
+ 
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://discord.gg/BQwzCD6P84"> <img src="discords.png" style="width:55px; height:55px;"> </a>
+                        <a href="https://www.youtube.com/@FrozeRoleplay"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/frozeroleplaymta"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="copy_right">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-7 copy-right-txt"> 
+                            <p><i class="fa fa-copyright" aria-hidden="true"></i>Developed by Froze Roleplay</a></p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right copy-right-txt">
+                            <p>Tüm Hakları Saklıdır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
